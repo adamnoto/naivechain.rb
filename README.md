@@ -10,7 +10,7 @@ distributed over nodes, that when added need to have some sort of proof of work
 so that it would be harder to deceive and manipulate the network for illegitimate benefits.
 
 This implementation takes inspiration from
-[https://github.com/lhartikk/naivechain](Naivechain) excepts:
+[Naivechain](https://github.com/lhartikk/naivechain) excepts:
 
 1. It used HTTP for all communication
 2. It has proof of work mechanism albeit very simple

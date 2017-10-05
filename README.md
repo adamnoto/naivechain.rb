@@ -15,8 +15,8 @@ This implementation takes inspiration from
 3. It is written in an object-oriented fashion: `Block` and `Chain` class.
 
 <sup>$</sup>: Non-functional requirement: a requirement specifying the how part of
-of a system, eg: how the system will work that is: it will work by involving a
-Blockchain, Merle tree, and so on. On the other hand, making borderless transaction
+a system, eg: how the system will work that is, it will work by involving a
+Blockchain, Merkle tree, and so on. On the other hand, making borderless transaction
 is a functional requirement.
 
 ## Running

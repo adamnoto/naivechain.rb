@@ -1,6 +1,6 @@
 # Naivechain.rb
 
-Naivechain is a Ruby implementation of Blockchain in 167 lines.
+Naivechain is a Ruby implementation of Blockchain in ~160 lines.
 
 Blockchain is a distributed peer-to-peer, non-functional<sup>$</sup> implementation that
 can be used in a lot of cases where intermediaries exist.

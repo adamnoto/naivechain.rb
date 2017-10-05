@@ -5,9 +5,7 @@ Naivechain is a Ruby implementation of Blockchain in ~160 lines.
 Blockchain is a distributed peer-to-peer, non-functional<sup>$</sup> implementation that
 can be used in a lot of cases where intermediaries exist.
 Blockchain attempts to disintermediate the world using publicly transparent
-chains of data spread over nodes.
-distributed over nodes, that when added need to have some sort of proof of work
-so that it would be harder to deceive and manipulate the network for illegitimate benefits.
+chains of block spread over nodes.
 
 This implementation takes inspiration from
 [Naivechain](https://github.com/lhartikk/naivechain) excepts:

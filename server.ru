@@ -65,8 +65,8 @@ app = Hanami::Router.new do
         puts "Ask for whole block instead"
         broadcast.(REQUEST_ALL_BLOCKS)
       elsif received_blocks.length > 1
-        puts "Replacing singularity"
-        chain.replace_with(received_blocks)
+        puts chain.replace_with(received_blocks) ? "Replacing singularity" :
+          "Replacement rejected"
         broadcast.(LAST_BLOCK)
       end
     else

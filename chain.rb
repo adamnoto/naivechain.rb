@@ -29,16 +29,20 @@ class Chain
   end
 
   def replace_with(new_blocks)
-    return unless valid_chain?(new_blocks) && new_blocks.length > blocks.length
+    new_blocks = [Block::GENESIS] + new_blocks
+    return unless valid_chain?(new_blocks) &&
+      new_blocks.length > blocks.length
     @blocks = new_blocks
-    puts "Block being replaced"
+    true
   end
 
   def valid_chain?(blocks=@blocks)
+    is_valid = true
     blocks.each.with_index(0) do |block, idx|
-      break true if idx.zero? ?
+      is_valid = is_valid && (idx.zero? ?
         (Oj.dump(block) == Oj.dump(Block::GENESIS)) :
-        (block.valid_after?(blocks[idx-1]))
+        (block.valid_after?(blocks[idx-1])))
     end # checking each block
+    is_valid
   end # valid_chain?
 end # Chain
